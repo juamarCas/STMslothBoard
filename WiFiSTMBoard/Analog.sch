@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 7874 4724
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 3200 3100 0    50   ~ 0
+Analog circuits for measurements
+Text Notes 3550 3950 0    50   ~ 0
+ADC
+Text Notes 4300 4100 0    50   ~ 0
+12/11/2021 (dd/mm/yyyy)
+Text Notes 6750 4100 0    50   ~ 0
+1.0
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 619CAAFB
+P 1750 2150
+F 0 "J?" V 1904 1962 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 1813 1962 50  0000 R CNN
+F 2 "" H 1750 2150 50  0001 C CNN
+F 3 "~" H 1750 2150 50  0001 C CNN
+	1    1750 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 619CBBCC
+P 3100 2150
+F 0 "J?" V 3254 1962 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 3163 1962 50  0000 R CNN
+F 2 "" H 3100 2150 50  0001 C CNN
+F 3 "~" H 3100 2150 50  0001 C CNN
+	1    3100 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 619CBEC6
+P 4350 2150
+F 0 "J?" V 4504 1962 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 4413 1962 50  0000 R CNN
+F 2 "" H 4350 2150 50  0001 C CNN
+F 3 "~" H 4350 2150 50  0001 C CNN
+	1    4350 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 619CC23C
+P 5700 2150
+F 0 "J?" V 5854 1962 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 5763 1962 50  0000 R CNN
+F 2 "" H 5700 2150 50  0001 C CNN
+F 3 "~" H 5700 2150 50  0001 C CNN
+	1    5700 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619CD7F8
+P 1500 2050
+F 0 "#PWR?" H 1500 1800 50  0001 C CNN
+F 1 "GND" H 1505 1877 50  0000 C CNN
+F 2 "" H 1500 2050 50  0001 C CNN
+F 3 "" H 1500 2050 50  0001 C CNN
+	1    1500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619CDBF6
+P 2850 2050
+F 0 "#PWR?" H 2850 1800 50  0001 C CNN
+F 1 "GND" H 2855 1877 50  0000 C CNN
+F 2 "" H 2850 2050 50  0001 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619CE0FE
+P 4100 2050
+F 0 "#PWR?" H 4100 1800 50  0001 C CNN
+F 1 "GND" H 4105 1877 50  0000 C CNN
+F 2 "" H 4100 2050 50  0001 C CNN
+F 3 "" H 4100 2050 50  0001 C CNN
+	1    4100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619CEFBA
+P 5450 2050
+F 0 "#PWR?" H 5450 1800 50  0001 C CNN
+F 1 "GND" H 5455 1877 50  0000 C CNN
+F 2 "" H 5450 2050 50  0001 C CNN
+F 3 "" H 5450 2050 50  0001 C CNN
+	1    5450 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1950 1650 1900
+Wire Wire Line
+	1650 1900 1500 1900
+Wire Wire Line
+	1500 1900 1500 2050
+Wire Wire Line
+	3000 1950 3000 1900
+Wire Wire Line
+	3000 1900 2850 1900
+Wire Wire Line
+	2850 1900 2850 2050
+Wire Wire Line
+	4250 1950 4250 1900
+Wire Wire Line
+	4250 1900 4100 1900
+Wire Wire Line
+	4100 1900 4100 2050
+Wire Wire Line
+	5600 1950 5600 1900
+Wire Wire Line
+	5600 1900 5450 1900
+Wire Wire Line
+	5450 1900 5450 2050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619D01B0
+P 1850 1850
+F 0 "#PWR?" H 1850 1700 50  0001 C CNN
+F 1 "+3.3V" H 1865 2023 50  0000 C CNN
+F 2 "" H 1850 1850 50  0001 C CNN
+F 3 "" H 1850 1850 50  0001 C CNN
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619D0848
+P 3200 1850
+F 0 "#PWR?" H 3200 1700 50  0001 C CNN
+F 1 "+3.3V" H 3215 2023 50  0000 C CNN
+F 2 "" H 3200 1850 50  0001 C CNN
+F 3 "" H 3200 1850 50  0001 C CNN
+	1    3200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619D0CCD
+P 4450 1850
+F 0 "#PWR?" H 4450 1700 50  0001 C CNN
+F 1 "+3.3V" H 4465 2023 50  0000 C CNN
+F 2 "" H 4450 1850 50  0001 C CNN
+F 3 "" H 4450 1850 50  0001 C CNN
+	1    4450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619D1310
+P 5800 1850
+F 0 "#PWR?" H 5800 1700 50  0001 C CNN
+F 1 "+3.3V" H 5815 2023 50  0000 C CNN
+F 2 "" H 5800 1850 50  0001 C CNN
+F 3 "" H 5800 1850 50  0001 C CNN
+	1    5800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1950 1850 1850
+Wire Wire Line
+	3200 1950 3200 1850
+Wire Wire Line
+	4450 1950 4450 1850
+Wire Wire Line
+	5800 1950 5800 1850
+Text GLabel 1750 1600 1    50   Input ~ 0
+ADC1_CH1
+Wire Wire Line
+	1750 1600 1750 1950
+Text GLabel 3100 1600 1    50   Input ~ 0
+ADC1_CH2
+Wire Wire Line
+	3100 1600 3100 1950
+Text GLabel 4350 1600 1    50   Input ~ 0
+ADC1_CH6
+Wire Wire Line
+	4350 1950 4350 1600
+Text GLabel 5700 1600 1    50   Input ~ 0
+ADC1_CH7
+Wire Wire Line
+	5700 1950 5700 1600
+$EndSCHEMATC
