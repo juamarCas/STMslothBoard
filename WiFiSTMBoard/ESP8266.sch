@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr User 8661 6299
 encoding utf-8
 Sheet 5 6
 Title ""
@@ -13,104 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF_Module:ESP8266MOD U?
-U 1 1 61986ACD
-P 5600 3450
-F 0 "U?" H 5600 4165 50  0000 C CNN
-F 1 "ESP8266MOD" H 5600 4074 50  0000 C CNN
-F 2 "" H 5600 4150 50  0001 C CNN
-F 3 "" H 5600 4150 50  0001 C CNN
-	1    5600 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61987B7F
-P 6150 3650
-F 0 "#PWR?" H 6150 3400 50  0001 C CNN
-F 1 "GND" H 6155 3477 50  0000 C CNN
-F 2 "" H 6150 3650 50  0001 C CNN
-F 3 "" H 6150 3650 50  0001 C CNN
-	1    6150 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 3600 6150 3600
-Wire Wire Line
-	6150 3600 6150 3650
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6198805F
-P 4950 3600
-F 0 "#PWR?" H 4950 3450 50  0001 C CNN
-F 1 "+3.3V" V 4965 3728 50  0000 L CNN
-F 2 "" H 4950 3600 50  0001 C CNN
-F 3 "" H 4950 3600 50  0001 C CNN
-	1    4950 3600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4950 3600 5150 3600
-NoConn ~ 5450 3900
-NoConn ~ 5500 3900
-NoConn ~ 5550 3900
-NoConn ~ 5650 3900
-NoConn ~ 5700 3900
-NoConn ~ 5750 3900
-$Comp
-L Device:C_Small C?
-U 1 1 61989FF7
-P 4100 3300
-F 0 "C?" H 4192 3346 50  0000 L CNN
-F 1 "100u" H 4192 3255 50  0000 L CNN
-F 2 "" H 4100 3300 50  0001 C CNN
-F 3 "~" H 4100 3300 50  0001 C CNN
-	1    4100 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6198A395
-P 4100 3100
-F 0 "#PWR?" H 4100 2950 50  0001 C CNN
-F 1 "+3.3V" H 4115 3273 50  0000 C CNN
-F 2 "" H 4100 3100 50  0001 C CNN
-F 3 "" H 4100 3100 50  0001 C CNN
-	1    4100 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6198AA9D
-P 4100 3550
-F 0 "#PWR?" H 4100 3300 50  0001 C CNN
-F 1 "GND" H 4105 3377 50  0000 C CNN
-F 2 "" H 4100 3550 50  0001 C CNN
-F 3 "" H 4100 3550 50  0001 C CNN
-	1    4100 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 3100 4100 3200
-Wire Wire Line
-	4100 3400 4100 3550
-Text GLabel 5050 3100 1    50   Input ~ 0
-ESP_RST
-Wire Wire Line
-	5150 3250 5050 3250
-Wire Wire Line
-	5050 3250 5050 3100
-Text GLabel 6150 3100 1    50   Input ~ 0
-TXD0
-Text GLabel 6250 3100 1    50   Input ~ 0
-RXD0
-Wire Wire Line
-	6050 3250 6150 3250
-Wire Wire Line
-	6150 3250 6150 3100
-Wire Wire Line
-	6050 3300 6250 3300
-Wire Wire Line
-	6250 3300 6250 3100
+Text Notes 4300 5550 0    50   ~ 0
+ESP8266
+Text Notes 5050 5650 0    50   ~ 0
+14/11/2021 (dd/mm/yyyy)
+Text Notes 7550 5650 0    50   ~ 0
+1.0
 $EndSCHEMATC
