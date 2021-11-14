@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 5906 4016
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -119,45 +119,42 @@ Wire Wire Line
 $Comp
 L Device:Polyfuse_Small F?
 U 1 1 619B5F71
-P 2600 1200
-F 0 "F?" V 2395 1200 50  0000 C CNN
-F 1 "500 mA" V 2486 1200 50  0000 C CNN
-F 2 "" H 2650 1000 50  0001 L CNN
-F 3 "~" H 2600 1200 50  0001 C CNN
-	1    2600 1200
+P 2350 1200
+F 0 "F?" V 2145 1200 50  0000 C CNN
+F 1 "500 mA" V 2236 1200 50  0000 C CNN
+F 2 "" H 2400 1000 50  0001 L CNN
+F 3 "~" H 2350 1200 50  0001 C CNN
+	1    2350 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2250 1150 2250 1200
+	2000 1150 2000 1200
 Wire Wire Line
-	2500 1200 2250 1200
+	2250 1200 2000 1200
 $Comp
 L Transistor_FET:AO3401A Q?
 U 1 1 619B8247
-P 3000 1300
-F 0 "Q?" V 3342 1300 50  0000 C CNN
-F 1 "AO3401A" V 3251 1300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1225 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3000 1300 50  0001 L CNN
-	1    3000 1300
+P 2750 1300
+F 0 "Q?" V 3092 1300 50  0000 C CNN
+F 1 "AO3401A" V 3001 1300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2950 1225 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2750 1300 50  0001 L CNN
+	1    2750 1300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2700 1200 2800 1200
+	2450 1200 2550 1200
 $Comp
 L power:GND #PWR?
 U 1 1 619BB1C5
-P 3000 1500
-F 0 "#PWR?" H 3000 1250 50  0001 C CNN
-F 1 "GND" H 3005 1327 50  0000 C CNN
-F 2 "" H 3000 1500 50  0001 C CNN
-F 3 "" H 3000 1500 50  0001 C CNN
-	1    3000 1500
+P 2750 1500
+F 0 "#PWR?" H 2750 1250 50  0001 C CNN
+F 1 "GND" H 2755 1327 50  0000 C CNN
+F 2 "" H 2750 1500 50  0001 C CNN
+F 3 "" H 2750 1500 50  0001 C CNN
+	1    2750 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 1200 3550 1200
-Connection ~ 3550 1200
 $Comp
 L power:+3.3V #PWR?
 U 1 1 619BBADD
@@ -184,14 +181,87 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 619C9B76
-P 2250 1150
-F 0 "#PWR?" H 2250 1000 50  0001 C CNN
-F 1 "VCC" H 2265 1323 50  0000 C CNN
-F 2 "" H 2250 1150 50  0001 C CNN
-F 3 "" H 2250 1150 50  0001 C CNN
-	1    2250 1150
+P 2000 1150
+F 0 "#PWR?" H 2000 1000 50  0001 C CNN
+F 1 "VCC" H 2015 1323 50  0000 C CNN
+F 2 "" H 2000 1150 50  0001 C CNN
+F 3 "" H 2000 1150 50  0001 C CNN
+	1    2000 1150
 	1    0    0    -1  
 $EndComp
 Text Notes 850  800  0    50   ~ 0
 VCC is any external power source\n you apply on the circuit
+Wire Wire Line
+	2950 1200 3250 1200
+Connection ~ 3550 1200
+$Comp
+L Device:D_Schottky_Small D?
+U 1 1 6195F1EF
+P 3250 1000
+F 0 "D?" V 3204 1070 50  0000 L CNN
+F 1 "D_Schottky_Small" V 3600 1050 50  0000 L CNN
+F 2 "" V 3250 1000 50  0001 C CNN
+F 3 "~" V 3250 1000 50  0001 C CNN
+	1    3250 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 1100 3250 1200
+Connection ~ 3250 1200
+Wire Wire Line
+	3250 1200 3550 1200
+$Comp
+L power:+5V #PWR?
+U 1 1 61960D48
+P 3250 850
+F 0 "#PWR?" H 3250 700 50  0001 C CNN
+F 1 "+5V" H 3265 1023 50  0000 C CNN
+F 2 "" H 3250 850 50  0001 C CNN
+F 3 "" H 3250 850 50  0001 C CNN
+	1    3250 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 850  3250 900 
+Text Notes 3400 800  0    50   ~ 0
+5V are givven by the\nUSB connector
+$Comp
+L Device:R_Small R?
+U 1 1 61976B04
+P 5150 1350
+F 0 "R?" H 4950 1400 50  0000 L CNN
+F 1 "1k" H 4950 1300 50  0000 L CNN
+F 2 "" H 5150 1350 50  0001 C CNN
+F 3 "~" H 5150 1350 50  0001 C CNN
+	1    5150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 61977926
+P 5150 1650
+F 0 "D?" V 4950 1950 50  0000 R CNN
+F 1 "LED_Small" V 5050 2100 50  0000 R CNN
+F 2 "" V 5150 1650 50  0001 C CNN
+F 3 "~" V 5150 1650 50  0001 C CNN
+	1    5150 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 1450 5150 1550
+$Comp
+L power:GND #PWR?
+U 1 1 61978BF6
+P 5150 1750
+F 0 "#PWR?" H 5150 1500 50  0001 C CNN
+F 1 "GND" H 5155 1577 50  0000 C CNN
+F 2 "" H 5150 1750 50  0001 C CNN
+F 3 "" H 5150 1750 50  0001 C CNN
+	1    5150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1200 5150 1200
+Wire Wire Line
+	5150 1200 5150 1250
 $EndSCHEMATC

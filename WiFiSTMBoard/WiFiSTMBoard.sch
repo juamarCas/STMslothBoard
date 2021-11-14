@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -736,4 +736,14 @@ Wire Notes Line
 	9300 650  2200 650 
 Text Notes 2250 800  0    50   ~ 0
 MICROCONTROLLER
+$Sheet
+S -3750 6050 1450 1150
+U 6195631A
+F0 "USB" 50
+F1 "USB.sch" 50
+$EndSheet
+Text Notes 7900 2800 0    50   ~ 0
+User LEDs
+Text Notes 2750 2200 0    50   ~ 0
+Reset button
 $EndSCHEMATC
