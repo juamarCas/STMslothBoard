@@ -1,1 +1,1 @@
-# Wi-Fi Board
+# STMslothBoard
