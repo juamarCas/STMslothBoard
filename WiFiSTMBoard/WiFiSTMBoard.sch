@@ -37,21 +37,6 @@ U 619F119B
 F0 "Peripherals" 50
 F1 "Peripherals.sch" 50
 $EndSheet
-NoConn ~ 5300 3850
-NoConn ~ 5300 4550
-NoConn ~ 5300 4450
-NoConn ~ 5300 4350
-NoConn ~ 5300 4250
-NoConn ~ 5300 5550
-NoConn ~ 5300 5450
-NoConn ~ 5300 5350
-NoConn ~ 6700 4750
-NoConn ~ 6700 4650
-NoConn ~ 6700 4550
-NoConn ~ 6700 4050
-NoConn ~ 6700 3850
-NoConn ~ 6700 2650
-NoConn ~ 6700 2550
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 619E894B
@@ -63,35 +48,10 @@ F 3 "~" H 3350 3350 50  0001 C CNN
 	1    3350 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 3150 2    50   Input ~ 0
-PA8_GPIO
-Text GLabel 6700 3250 2    50   Input ~ 0
-PA9_GPIO
-Text GLabel 6700 3750 2    50   Input ~ 0
+Text GLabel 6600 5075 2    50   Input ~ 0
 SWCLK
 Text Notes 7000 6650 0    50   ~ 0
 MCU circuit diagram
-$Comp
-L MCU_ST_STM32F3:STM32F303RETx U1
-U 1 1 618E6694
-P 6000 3950
-F 0 "U1" H 5100 2000 50  0000 C CNN
-F 1 "STM32F303RETx" H 5150 1900 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5400 2250 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00118585.pdf" H 6000 3950 50  0001 C CNN
-	1    6000 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 2150 5800 2050
-Wire Wire Line
-	5900 2150 5900 2050
-Wire Wire Line
-	6000 2150 6000 2050
-Wire Wire Line
-	6100 2150 6100 2050
-Wire Wire Line
-	6200 2150 6200 2050
 Text Notes 6700 900  0    50   ~ 0
 Filtering for analog (VDDA)
 Connection ~ 7450 1300
@@ -250,12 +210,12 @@ $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 618F76CB
-P 4750 1700
-F 0 "#PWR06" H 4750 1450 50  0001 C CNN
-F 1 "GND" H 4755 1527 50  0000 C CNN
-F 2 "" H 4750 1700 50  0001 C CNN
-F 3 "" H 4750 1700 50  0001 C CNN
-	1    4750 1700
+P 4400 1600
+F 0 "#PWR06" H 4400 1350 50  0001 C CNN
+F 1 "GND" H 4405 1427 50  0000 C CNN
+F 2 "" H 4400 1600 50  0001 C CNN
+F 3 "" H 4400 1600 50  0001 C CNN
+	1    4400 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -272,14 +232,8 @@ Wire Wire Line
 Connection ~ 4050 1400
 Wire Wire Line
 	4050 1400 4400 1400
-Connection ~ 4400 1400
-Wire Wire Line
-	4400 1400 4750 1400
 Wire Wire Line
 	3000 1600 3350 1600
-Wire Wire Line
-	4750 1600 4750 1700
-Connection ~ 4750 1600
 Connection ~ 3350 1600
 Wire Wire Line
 	3350 1600 3700 1600
@@ -289,19 +243,8 @@ Wire Wire Line
 Connection ~ 4050 1600
 Wire Wire Line
 	4050 1600 4400 1600
-Connection ~ 4400 1600
-Wire Wire Line
-	4400 1600 4750 1600
 Text Notes 2950 1000 0    50   ~ 0
 STM decoupling capacitors, for each VDD and VSS pair
-Text GLabel 5300 5050 0    50   Input ~ 0
-UART4_TX
-Text GLabel 5300 5150 0    50   Input ~ 0
-UART4_RX
-Text GLabel 5300 4150 0    50   Input ~ 0
-ADC1_CH7
-Text GLabel 5300 4050 0    50   Input ~ 0
-ADC1_CH6
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 61909EA6
@@ -559,122 +502,70 @@ $EndComp
 Text GLabel 8300 3050 1    50   Input ~ 0
 LED_2
 Text GLabel 7950 3050 1    50   Input ~ 0
-LED_2
-Text GLabel 6700 5250 2    50   Input ~ 0
-PB12_BTN
-Text GLabel 5300 3650 0    50   Input ~ 0
-OSC_OUT
-Text GLabel 5300 3550 0    50   Input ~ 0
-OSC_IN
-Text GLabel 6700 5550 2    50   Input ~ 0
-PB15_BTN
-Text GLabel 6700 5450 2    50   Input ~ 0
-PB14_BTN
-Text GLabel 6700 5350 2    50   Input ~ 0
-PB13_BTN
-Text GLabel 5300 4950 0    50   Input ~ 0
-PC9_GPIO
-Text GLabel 5300 4850 0    50   Input ~ 0
-PC8_GPIO
-Text GLabel 5300 4750 0    50   Input ~ 0
-PC7_GPIO
-Text GLabel 5300 4650 0    50   Input ~ 0
-PC6_GPIO
-Text GLabel 6700 3650 2    50   Input ~ 0
-SWDIO
-Text GLabel 6700 3550 2    50   Input ~ 0
-USB_DP
-Text GLabel 6700 3450 2    50   Input ~ 0
-USB_DM
-Text GLabel 6700 3350 2    50   Input ~ 0
-PA10_GPIO
-Text GLabel 5300 2550 0    50   Input ~ 0
-BOOT0
-Text GLabel 5300 2350 0    50   Input ~ 0
-NRST
-Text GLabel 6700 4250 2    50   Input ~ 0
-LED_2
-Text GLabel 6700 4150 2    50   Input ~ 0
 LED_1
-Text GLabel 6700 2450 2    50   Input ~ 0
-ADC1_CH2
-Text GLabel 6700 2350 2    50   Input ~ 0
-ADC1_CH1
-Text GLabel 6700 5150 2    50   Input ~ 0
-USART3_RX
-Text GLabel 6700 5050 2    50   Input ~ 0
+Text GLabel 6600 3975 2    50   Input ~ 0
+PA3_BTN
+Text GLabel 5300 3075 0    50   Input ~ 0
+OSC_OUT
+Text GLabel 5300 2975 0    50   Input ~ 0
+OSC_IN
+Text GLabel 6600 4275 2    50   Input ~ 0
+PA6_BTN
+Text GLabel 6600 4175 2    50   Input ~ 0
+PA5_BTN
+Text GLabel 6600 4075 2    50   Input ~ 0
+PA4_BTN
+Text GLabel 6600 4975 2    50   Input ~ 0
+SWDIO
+Text GLabel 6600 4875 2    50   Input ~ 0
+USB_DP
+Text GLabel 6600 4775 2    50   Input ~ 0
+USB_DM
+Text GLabel 5300 2775 0    50   Input ~ 0
+BOOT0
+Text GLabel 5300 2575 0    50   Input ~ 0
+NRST
+Text GLabel 5300 3675 0    50   Input ~ 0
+LED_2
+Text GLabel 5300 3775 0    50   Input ~ 0
+LED_1
+Text GLabel 5300 4675 0    50   Input ~ 0
 USART3_TX
-Text GLabel 6700 4950 2    50   Input ~ 0
+Text GLabel 5300 4575 0    50   Input ~ 0
 SDA
-Text GLabel 6700 4850 2    50   Input ~ 0
+Text GLabel 5300 4475 0    50   Input ~ 0
 SCL
-Wire Wire Line
-	6100 5900 6200 5900
-Connection ~ 6100 5900
-Wire Wire Line
-	6100 5750 6100 5900
-Wire Wire Line
-	6000 5900 6100 5900
-Connection ~ 6000 5900
-Wire Wire Line
-	6000 5750 6000 5900
-Wire Wire Line
-	5900 5900 6000 5900
-Connection ~ 5900 5900
-Wire Wire Line
-	5900 5750 5900 5900
-Connection ~ 6200 5900
-Wire Wire Line
-	6200 5750 6200 5900
-Wire Wire Line
-	5800 5900 5900 5900
-Wire Wire Line
-	5800 5750 5800 5900
 $Comp
 L power:GND #PWR015
 U 1 1 618EECB0
-P 6200 5900
-F 0 "#PWR015" H 6200 5650 50  0001 C CNN
-F 1 "GND" H 6205 5727 50  0000 C CNN
-F 2 "" H 6200 5900 50  0001 C CNN
-F 3 "" H 6200 5900 50  0001 C CNN
-	1    6200 5900
+P 6100 5525
+F 0 "#PWR015" H 6100 5275 50  0001 C CNN
+F 1 "GND" H 6105 5352 50  0000 C CNN
+F 2 "" H 6100 5525 50  0001 C CNN
+F 3 "" H 6100 5525 50  0001 C CNN
+	1    6100 5525
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6300 2150 6300 2050
 $Comp
 L power:+3.3VA #PWR08
 U 1 1 618EE0E0
-P 6300 2050
-F 0 "#PWR08" H 6300 1900 50  0001 C CNN
-F 1 "+3.3VA" H 6315 2223 50  0000 C CNN
-F 2 "" H 6300 2050 50  0001 C CNN
-F 3 "" H 6300 2050 50  0001 C CNN
-	1    6300 2050
+P 6200 2200
+F 0 "#PWR08" H 6200 2050 50  0001 C CNN
+F 1 "+3.3VA" H 6215 2373 50  0000 C CNN
+F 2 "" H 6200 2200 50  0001 C CNN
+F 3 "" H 6200 2200 50  0001 C CNN
+	1    6200 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 2050 6000 2050
-Connection ~ 6100 2050
-Wire Wire Line
-	6000 2050 5900 2050
-Connection ~ 6000 2050
-Wire Wire Line
-	5900 2050 5800 2050
-Connection ~ 5900 2050
-Connection ~ 5800 2050
-Wire Wire Line
-	6200 2050 6100 2050
 $Comp
 L power:+3.3V #PWR07
 U 1 1 618ED324
-P 5800 2050
-F 0 "#PWR07" H 5800 1900 50  0001 C CNN
-F 1 "+3.3V" H 5815 2223 50  0000 C CNN
-F 2 "" H 5800 2050 50  0001 C CNN
-F 3 "" H 5800 2050 50  0001 C CNN
-	1    5800 2050
+P 5800 2200
+F 0 "#PWR07" H 5800 2050 50  0001 C CNN
+F 1 "+3.3V" H 5815 2373 50  0000 C CNN
+F 2 "" H 5800 2200 50  0001 C CNN
+F 3 "" H 5800 2200 50  0001 C CNN
+	1    5800 2200
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -702,7 +593,7 @@ L Connector:TestPoint TP1
 U 1 1 61A3FBDD
 P 7450 1200
 F 0 "TP1" V 7404 1388 50  0000 L CNN
-F 1 "TestPoint" V 7495 1388 50  0000 L CNN
+F 1 "TestPoint" V 7375 1500 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7650 1200 50  0001 C CNN
 F 3 "~" H 7650 1200 50  0001 C CNN
 	1    7450 1200
@@ -712,36 +603,24 @@ Connection ~ 7450 1200
 $Comp
 L Connector:TestPoint TP3
 U 1 1 61A403A9
-P 5800 2050
-F 0 "TP3" V 5950 2400 50  0000 C CNN
-F 1 "TestPoint" V 5850 2400 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6000 2050 50  0001 C CNN
-F 3 "~" H 6000 2050 50  0001 C CNN
-	1    5800 2050
+P 5800 2275
+F 0 "TP3" V 5950 2625 50  0000 C CNN
+F 1 "TestPoint" V 5850 2625 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6000 2275 50  0001 C CNN
+F 3 "~" H 6000 2275 50  0001 C CNN
+	1    5800 2275
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 61A459BC
-P 3000 1400
-F 0 "TP2" V 3150 1750 50  0000 C CNN
-F 1 "TestPoint" V 3050 1750 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3200 1400 50  0001 C CNN
-F 3 "~" H 3200 1400 50  0001 C CNN
-	1    3000 1400
-	0    -1   -1   0   
-$EndComp
-Text GLabel 6700 3050 2    50   Input ~ 0
-PA7_GPIO
-NoConn ~ 6700 4450
-Text GLabel 6700 4350 2    50   Input ~ 0
+Text GLabel 5300 4075 0    50   Input ~ 0
+PB4_GPIO
+Text GLabel 5300 3975 0    50   Input ~ 0
 SWO
-Text GLabel 6700 2950 2    50   Input ~ 0
-PA6_GPIO
-Text GLabel 6700 2850 2    50   Input ~ 0
-PA5_GPIO
-Text GLabel 6700 2750 2    50   Input ~ 0
-PA4_GPIO
+Text GLabel 5300 4175 0    50   Input ~ 0
+PB5_GPIO
+Text GLabel 5300 4275 0    50   Input ~ 0
+PB6_GPIO
+Text GLabel 5300 4375 0    50   Input ~ 0
+PB7_GPIO
 $Comp
 L Switch:SW_Push_Dual_x2 SW1
 U 1 1 61B2EB3F
@@ -841,15 +720,87 @@ Wire Notes Line
 	9450 600  9450 2500
 Text Notes 9550 750  0    50   ~ 0
 Mounting holes
+Text GLabel 6600 3675 2    50   Input ~ 0
+ADC1_CH1
+Text GLabel 6600 3775 2    50   Input ~ 0
+ADC1_CH2
+Text GLabel 6600 3875 2    50   Input ~ 0
+ADC1_CH3
+Connection ~ 4400 1600
+Wire Wire Line
+	5800 2375 5800 2275
+Wire Wire Line
+	6100 2275 6100 2375
+Connection ~ 5800 2275
+Wire Wire Line
+	5800 2275 5800 2200
+Wire Wire Line
+	6000 2375 6000 2275
+Wire Wire Line
+	5800 2275 5900 2275
+Connection ~ 6000 2275
+Wire Wire Line
+	6000 2275 6100 2275
+Wire Wire Line
+	5900 2375 5900 2275
+Connection ~ 5900 2275
+Wire Wire Line
+	5900 2275 6000 2275
+Wire Wire Line
+	6200 2375 6200 2200
+Wire Wire Line
+	5800 5375 5800 5525
+Wire Wire Line
+	5800 5525 5900 5525
+Wire Wire Line
+	6100 5375 6100 5525
+Connection ~ 6100 5525
+Wire Wire Line
+	6000 5375 6000 5525
+Connection ~ 6000 5525
+Wire Wire Line
+	6000 5525 6100 5525
+Wire Wire Line
+	5900 5375 5900 5525
+Connection ~ 5900 5525
+Wire Wire Line
+	5900 5525 6000 5525
+Text GLabel 6600 4575 2    50   Input ~ 0
+UART1_TX
+Text GLabel 5300 4775 0    50   Input ~ 0
+USART3_RX
+Text GLabel 6600 4675 2    50   Input ~ 0
+UART1_RX
+Text GLabel 5300 3875 0    50   Input ~ 0
+PB2_GPIO
+NoConn ~ 6600 5175
 $Comp
-L Device:C_Small C8
-U 1 1 618F157E
-P 4750 1500
-F 0 "C8" H 4842 1546 50  0000 L CNN
-F 1 "100n" H 4842 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4750 1500 50  0001 C CNN
-F 3 "~" H 4750 1500 50  0001 C CNN
-	1    4750 1500
+L MCU_ST_STM32F3:STM32F302C8Tx U1
+U 1 1 619F79A7
+P 6000 3875
+F 0 "U1" H 4575 2425 50  0000 C CNN
+F 1 "STM32F302C8Tx" H 4675 2125 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5400 2475 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00093333.pdf" H 6000 3875 50  0001 C CNN
+	1    6000 3875
 	1    0    0    -1  
 $EndComp
+Text GLabel 6600 4375 2    50   Input ~ 0
+PA7
+Text GLabel 6600 4475 2    50   Input ~ 0
+PA8
+Text GLabel 5300 4875 0    50   Input ~ 0
+PB12
+Text GLabel 5300 4975 0    50   Input ~ 0
+PB13
+Text GLabel 5300 5075 0    50   Input ~ 0
+PB14
+Text GLabel 5300 5175 0    50   Input ~ 0
+PB15
+Text GLabel 5300 3275 0    50   Input ~ 0
+PC13
+Text GLabel 5300 3375 0    50   Input ~ 0
+PC14
+Text GLabel 5300 3475 0    50   Input ~ 0
+PC15
 $EndSCHEMATC

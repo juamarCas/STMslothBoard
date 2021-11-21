@@ -19,95 +19,52 @@ Text Notes 7500 7100 0    50   ~ 0
 Peripherals
 Text Notes 10700 7250 0    50   ~ 0
 1.0
-$Comp
-L Connector:Conn_01x04_Male J13
-U 1 1 619F197C
-P 6600 4300
-F 0 "J13" V 6754 4012 50  0000 R CNN
-F 1 "Conn_01x04_Male" V 6450 4600 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical" H 6600 4300 50  0001 C CNN
-F 3 "~" H 6600 4300 50  0001 C CNN
-	1    6600 4300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR047
-U 1 1 619FA27E
-P 6600 3900
-F 0 "#PWR047" H 6600 3750 50  0001 C CNN
-F 1 "+3.3V" H 6615 4073 50  0000 C CNN
-F 2 "" H 6600 3900 50  0001 C CNN
-F 3 "" H 6600 3900 50  0001 C CNN
-	1    6600 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 4100 6600 3900
-$Comp
-L power:GND #PWR051
-U 1 1 619FAC3E
-P 6300 4150
-F 0 "#PWR051" H 6300 3900 50  0001 C CNN
-F 1 "GND" H 6305 3977 50  0000 C CNN
-F 2 "" H 6300 4150 50  0001 C CNN
-F 3 "" H 6300 4150 50  0001 C CNN
-	1    6300 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 4100 6500 4000
-Wire Wire Line
-	6500 4000 6300 4000
-Wire Wire Line
-	6300 4000 6300 4150
-Text GLabel 6700 4100 1    50   Input ~ 0
-SCL
 Text GLabel 5450 4550 0    50   Input ~ 0
 SDA
 $Comp
 L Connector:Conn_01x04_Male J14
 U 1 1 619FD71A
-P 7550 4300
-F 0 "J14" V 7704 4012 50  0000 R CNN
-F 1 "Conn_01x04_Male" V 7400 4600 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical" H 7550 4300 50  0001 C CNN
-F 3 "~" H 7550 4300 50  0001 C CNN
-	1    7550 4300
+P 7125 4275
+F 0 "J14" V 7279 3987 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 6975 4575 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 7125 4275 50  0001 C CNN
+F 3 "~" H 7125 4275 50  0001 C CNN
+	1    7125 4275
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR048
 U 1 1 619FD720
-P 7550 3900
-F 0 "#PWR048" H 7550 3750 50  0001 C CNN
-F 1 "+3.3V" H 7565 4073 50  0000 C CNN
-F 2 "" H 7550 3900 50  0001 C CNN
-F 3 "" H 7550 3900 50  0001 C CNN
-	1    7550 3900
+P 7125 3875
+F 0 "#PWR048" H 7125 3725 50  0001 C CNN
+F 1 "+3.3V" H 7140 4048 50  0000 C CNN
+F 2 "" H 7125 3875 50  0001 C CNN
+F 3 "" H 7125 3875 50  0001 C CNN
+	1    7125 3875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 4100 7550 3900
+	7125 4075 7125 3875
 $Comp
 L power:GND #PWR052
 U 1 1 619FD727
-P 7250 4150
-F 0 "#PWR052" H 7250 3900 50  0001 C CNN
-F 1 "GND" H 7255 3977 50  0000 C CNN
-F 2 "" H 7250 4150 50  0001 C CNN
-F 3 "" H 7250 4150 50  0001 C CNN
-	1    7250 4150
+P 6825 4125
+F 0 "#PWR052" H 6825 3875 50  0001 C CNN
+F 1 "GND" H 6830 3952 50  0000 C CNN
+F 2 "" H 6825 4125 50  0001 C CNN
+F 3 "" H 6825 4125 50  0001 C CNN
+	1    6825 4125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 4100 7450 4000
+	7025 4075 7025 3975
 Wire Wire Line
-	7450 4000 7250 4000
+	7025 3975 6825 3975
 Wire Wire Line
-	7250 4000 7250 4150
-Text GLabel 7650 4100 1    50   Input ~ 0
+	6825 3975 6825 4125
+Text GLabel 7325 4075 1    50   Input ~ 0
 SCL
-Text GLabel 7750 4100 1    50   Input ~ 0
+Text GLabel 7225 4075 1    50   Input ~ 0
 SDA
 Text GLabel 5450 3950 0    50   Input ~ 0
 SCL
@@ -163,150 +120,17 @@ F 3 "" H 5550 4250 50  0001 C CNN
 	1    5550 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 6800 4100 1    50   Input ~ 0
-SDA
-$Comp
-L Connector:Conn_01x04_Male J11
-U 1 1 61A05E07
-P 1900 2350
-F 0 "J11" V 2054 2062 50  0000 R CNN
-F 1 "Conn_01x04_Male" V 1750 2650 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical" H 1900 2350 50  0001 C CNN
-F 3 "~" H 1900 2350 50  0001 C CNN
-	1    1900 2350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR039
-U 1 1 61A05E0D
-P 1900 1950
-F 0 "#PWR039" H 1900 1800 50  0001 C CNN
-F 1 "+3.3V" H 1750 2050 50  0000 C CNN
-F 2 "" H 1900 1950 50  0001 C CNN
-F 3 "" H 1900 1950 50  0001 C CNN
-	1    1900 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 2150 1900 1950
-$Comp
-L power:GND #PWR042
-U 1 1 61A05E14
-P 1600 2200
-F 0 "#PWR042" H 1600 1950 50  0001 C CNN
-F 1 "GND" H 1605 2027 50  0000 C CNN
-F 2 "" H 1600 2200 50  0001 C CNN
-F 3 "" H 1600 2200 50  0001 C CNN
-	1    1600 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 2150 1800 2050
-Wire Wire Line
-	1800 2050 1600 2050
-Wire Wire Line
-	1600 2050 1600 2200
-Text GLabel 2000 2150 1    50   Input ~ 0
-UART4_TX
-Text GLabel 2100 2150 1    50   Input ~ 0
-UART4_RX
-$Comp
-L power:GND #PWR033
-U 1 1 61A176D7
-P 8000 1750
-F 0 "#PWR033" H 8000 1500 50  0001 C CNN
-F 1 "GND" H 8005 1577 50  0000 C CNN
-F 2 "" H 8000 1750 50  0001 C CNN
-F 3 "" H 8000 1750 50  0001 C CNN
-	1    8000 1750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7900 1850 7900 1750
-Wire Wire Line
-	7900 1750 8000 1750
-$Comp
-L power:+3.3V #PWR034
-U 1 1 61A18049
-P 7800 1850
-F 0 "#PWR034" H 7800 1700 50  0001 C CNN
-F 1 "+3.3V" V 7815 1978 50  0000 L CNN
-F 2 "" H 7800 1850 50  0001 C CNN
-F 3 "" H 7800 1850 50  0001 C CNN
-	1    7800 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 7400 1850 1    50   Input ~ 0
-PA4_GPIO
-$Comp
-L Connector:Conn_01x11_Male J10
-U 1 1 61A4C08E
-P 6500 2100
-F 0 "J10" H 6608 2781 50  0000 C CNN
-F 1 "Conn_01x11_Male" H 6608 2690 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 6500 2100 50  0001 C CNN
-F 3 "~" H 6500 2100 50  0001 C CNN
-	1    6500 2100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR035
-U 1 1 61A4D180
-P 6000 1900
-F 0 "#PWR035" H 6000 1750 50  0001 C CNN
-F 1 "+3.3V" V 6015 2028 50  0000 L CNN
-F 2 "" H 6000 1900 50  0001 C CNN
-F 3 "" H 6000 1900 50  0001 C CNN
-	1    6000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR036
-U 1 1 61A4DBDB
-P 6100 1900
-F 0 "#PWR036" H 6100 1650 50  0001 C CNN
-F 1 "GND" V 6105 1772 50  0000 R CNN
-F 2 "" H 6100 1900 50  0001 C CNN
-F 3 "" H 6100 1900 50  0001 C CNN
-	1    6100 1900
-	-1   0    0    1   
-$EndComp
-Text GLabel 6200 1900 1    50   Input ~ 0
-PC6_GPIO
-Text GLabel 6300 1900 1    50   Input ~ 0
-PC7_GPIO
-Text GLabel 6400 1900 1    50   Input ~ 0
-PC8_GPIO
-Text GLabel 6500 1900 1    50   Input ~ 0
-PC9_GPIO
-$Comp
-L power:VCC #PWR037
-U 1 1 61A4E95E
-P 6600 1900
-F 0 "#PWR037" H 6600 1750 50  0001 C CNN
-F 1 "VCC" V 6615 2028 50  0000 L CNN
-F 2 "" H 6600 1900 50  0001 C CNN
-F 3 "" H 6600 1900 50  0001 C CNN
-	1    6600 1900
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR038
 U 1 1 61A4EF44
-P 6700 1900
-F 0 "#PWR038" H 6700 1650 50  0001 C CNN
-F 1 "GND" V 6705 1772 50  0000 R CNN
-F 2 "" H 6700 1900 50  0001 C CNN
-F 3 "" H 6700 1900 50  0001 C CNN
-	1    6700 1900
+P 6800 1900
+F 0 "#PWR038" H 6800 1650 50  0001 C CNN
+F 1 "GND" V 6800 1750 50  0000 R CNN
+F 2 "" H 6800 1900 50  0001 C CNN
+F 3 "" H 6800 1900 50  0001 C CNN
+	1    6800 1900
 	-1   0    0    1   
 $EndComp
-Text GLabel 6800 1900 1    50   Input ~ 0
-PA8_GPIO
-Text GLabel 6900 1900 1    50   Input ~ 0
-PA9_GPIO
-Text GLabel 7000 1900 1    50   Input ~ 0
-PA10_GPIO
 Wire Notes Line
 	8450 2650 8450 900 
 Wire Notes Line
@@ -323,18 +147,6 @@ Wire Notes Line
 	5050 2850 8100 2850
 Text Notes 5150 3000 0    50   ~ 0
 I2C
-Wire Notes Line
-	850  900  850  2650
-Wire Notes Line
-	850  2650 3000 2650
-Wire Notes Line
-	3000 2650 3000 900 
-Wire Notes Line
-	850  900  3000 900 
-Text Notes 950  1050 0    50   ~ 0
-UART4
-Text GLabel 1550 3650 0    50   Input ~ 0
-PB12_BTN
 Wire Wire Line
 	1550 3650 1700 3650
 $Comp
@@ -401,8 +213,6 @@ Wire Wire Line
 	1900 3950 1700 3950
 Wire Wire Line
 	1700 3950 1700 3650
-Text GLabel 1500 5000 0    50   Input ~ 0
-PB13_BTN
 Wire Wire Line
 	1500 5000 1650 5000
 $Comp
@@ -469,8 +279,6 @@ Wire Wire Line
 	1850 5300 1650 5300
 Wire Wire Line
 	1650 5300 1650 5000
-Text GLabel 3450 3650 0    50   Input ~ 0
-PB14_BTN
 Wire Wire Line
 	3450 3650 3600 3650
 $Comp
@@ -537,8 +345,6 @@ Wire Wire Line
 	3800 3950 3600 3950
 Wire Wire Line
 	3600 3950 3600 3650
-Text GLabel 3400 5000 0    50   Input ~ 0
-PB15_BTN
 Wire Wire Line
 	3400 5000 3550 5000
 $Comp
@@ -619,10 +425,6 @@ Text GLabel 6950 3450 0    50   Input ~ 0
 SCL
 Text GLabel 7350 3450 2    50   Input ~ 0
 SDA
-Text GLabel 2150 1450 2    50   Input ~ 0
-UART4_RX
-Text GLabel 1750 1450 0    50   Input ~ 0
-UART4_TX
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J7
 U 1 1 61A64B93
@@ -672,7 +474,7 @@ U 1 1 61A8A4E8
 P 4150 2350
 F 0 "J12" V 4304 2062 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 4000 2650 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical" H 4150 2350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 4150 2350 50  0001 C CNN
 F 3 "~" H 4150 2350 50  0001 C CNN
 	1    4150 2350
 	0    -1   -1   0   
@@ -707,9 +509,9 @@ Wire Wire Line
 	4050 2050 3850 2050
 Wire Wire Line
 	3850 2050 3850 2200
-Text GLabel 4250 2150 1    50   Input ~ 0
-USART3_TX
 Text GLabel 4350 2150 1    50   Input ~ 0
+USART3_TX
+Text GLabel 4250 2150 1    50   Input ~ 0
 USART3_RX
 Wire Notes Line
 	3100 900  3100 2650
@@ -764,49 +566,10 @@ Wire Notes Line
 	5400 2650 8450 2650
 Wire Notes Line
 	5400 900  8450 900 
-Text GLabel 7500 1850 1    50   Input ~ 0
-PA5_GPIO
-$Comp
-L Connector:Conn_01x06_Male J9
-U 1 1 61AB6797
-P 7600 2050
-F 0 "J9" H 7708 2431 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 7708 2340 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7600 2050 50  0001 C CNN
-F 3 "~" H 7600 2050 50  0001 C CNN
-	1    7600 2050
-	0    -1   -1   0   
-$EndComp
-Text GLabel 7600 1850 1    50   Input ~ 0
-PA6_GPIO
-Text GLabel 7700 1850 1    50   Input ~ 0
-PA7_GPIO
 Wire Notes Line
 	8550 2650 10650 2650
 Wire Notes Line
 	10650 900  8550 900 
-$Comp
-L Connector:TestPoint TP7
-U 1 1 61B1E6C5
-P 1750 1450
-F 0 "TP7" H 1808 1568 50  0000 L CNN
-F 1 "TX4_TP" H 1400 1350 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 1950 1450 50  0001 C CNN
-F 3 "~" H 1950 1450 50  0001 C CNN
-	1    1750 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP8
-U 1 1 61B1EC5D
-P 2150 1450
-F 0 "TP8" H 2208 1568 50  0000 L CNN
-F 1 "RX4_TP" H 2250 1350 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2350 1450 50  0001 C CNN
-F 3 "~" H 2350 1450 50  0001 C CNN
-	1    2150 1450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP9
 U 1 1 61B1F171
@@ -903,6 +666,59 @@ F 1 "PB13" H 2050 5200 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 2000 5200 50  0001 C CNN
 F 3 "~" H 2000 5200 50  0001 C CNN
 	1    2000 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 1900 1    50   Input ~ 0
+PB4_GPIO
+Text GLabel 6400 1900 1    50   Input ~ 0
+PB5_GPIO
+Text GLabel 6300 1900 1    50   Input ~ 0
+PB6_GPIO
+Text GLabel 1550 3650 0    50   Input ~ 0
+PA3_BTN
+Text GLabel 1500 5000 0    50   Input ~ 0
+PA4_BTN
+Text GLabel 3450 3650 0    50   Input ~ 0
+PA5_BTN
+Text GLabel 3400 5000 0    50   Input ~ 0
+PA6_BTN
+$Comp
+L Connector:Conn_01x11_Male J10
+U 1 1 61A4C08E
+P 6500 2100
+F 0 "J10" H 6608 2781 50  0000 C CNN
+F 1 "Conn_01x11_Male" H 6608 2690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 6500 2100 50  0001 C CNN
+F 3 "~" H 6500 2100 50  0001 C CNN
+	1    6500 2100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6000 1900 1    50   Input ~ 0
+PC13
+Text GLabel 6100 1900 1    50   Input ~ 0
+PC14
+Text GLabel 6200 1900 1    50   Input ~ 0
+PC15
+$Comp
+L power:GND #PWR0103
+U 1 1 61D3C7E8
+P 6700 1900
+F 0 "#PWR0103" H 6700 1650 50  0001 C CNN
+F 1 "GND" V 6705 1772 50  0000 R CNN
+F 2 "" H 6700 1900 50  0001 C CNN
+F 3 "" H 6700 1900 50  0001 C CNN
+	1    6700 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 61D411CE
+P 6600 1900
+F 0 "#PWR0102" H 6600 1750 50  0001 C CNN
+F 1 "+3.3V" V 6600 2100 50  0000 C CNN
+F 2 "" H 6600 1900 50  0001 C CNN
+F 3 "" H 6600 1900 50  0001 C CNN
+	1    6600 1900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
